@@ -2,7 +2,7 @@
 {}
 ---
 
-import { AnchorHeading, Type, MetaInfo } from "~/components";
+import {Render, AnchorHeading, Type, MetaInfo } from "~/components";
 
 <AnchorHeading title="`create`" slug="d1-create" depth={3} />
 
@@ -290,4 +290,6 @@ wrangler d1 migrations apply <DATABASE_NAME> [OPTIONS]
 - `--batch-size` <Type text="number" /> <MetaInfo text="optional" />
   - Number of queries to send in a single batch.
 
----
+## Global commands
+
+<Render file="wrangler-commands/global-flags" product="workers" />
