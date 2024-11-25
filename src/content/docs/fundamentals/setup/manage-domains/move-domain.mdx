@@ -37,7 +37,7 @@ If you miss this step, Cloudflare will import your proxied DNS records, which mi
 
 :::
 
-If you still have access to your previous Cloudflare account, you can copy over the Cloudflare account settings manually. You must reissue [SSL/TLS certificates](/ssl/edge-certificates/) and [recreate and validate DNS records](/dns/manage-dns-records/how-to/create-dns-records/) when transferring domains between Cloudflare accounts.
+If you still have access to your previous Cloudflare account, you can copy over the Cloudflare account settings manually. You must reissue [SSL/TLS certificates](#issue-new-certificates) and [recreate and validate DNS records](/dns/manage-dns-records/how-to/create-dns-records/) when transferring domains between Cloudflare accounts.
 
 If you lose access to the email address associated with your Cloudflare account and do not have backup codes, you will need to manually transfer your domain to a new Cloudflare account associated with a different email address.
 
@@ -58,7 +58,6 @@ For more information, refer to [Zone status](/dns/zone-setups/reference/domain-s
 
 SSL/TLS certificates associated with your previous Cloudflare account will not be transferred to your new account. If your site requires an SSL/TLS certificate prior to domain transfer, refer to [Minimize downtime](/ssl/edge-certificates/universal-ssl/enable-universal-ssl/#minimize-downtime).
 
-If you were using [Custom certificates](/ssl/edge-certificates/custom-certificates/), you will need to delete them from the previous zone and upload them to the new zone.
-You can upload them whilst the new zone is pending: they will have the [Holding Deployment](/ssl/reference/certificate-statuses/#custom-certificates) status and will become active once the zone is active.
+If you were using [custom certificates](/ssl/edge-certificates/custom-certificates/), you will need to delete them from the previous zone and upload them to the new zone. You can upload the certificates while the new zone is in **Pending** status - if you do so, once you upload the certificates, they will have a [**Holding Deployment**](/ssl/reference/certificate-statuses/#custom-certificates) status and will become active once the zone is active.
 
-You can order an [advanced certificate](/ssl/edge-certificates/advanced-certificate-manager/) prior to transferring your domain. Once issued, the certificate will enter **Holding Deployment** status until the domain is active. ACM certificates will automatically deploy to active domains. For more information, refer to [Custom certificates](/ssl/reference/certificate-statuses/#custom-certificates).
+You can order an [advanced certificate](/ssl/edge-certificates/advanced-certificate-manager/) prior to transferring your domain. Once issued, the certificate will enter **Holding Deployment** status until the domain is active. ACM certificates will automatically deploy to active domains.
