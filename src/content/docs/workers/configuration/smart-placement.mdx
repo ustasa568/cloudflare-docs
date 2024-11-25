@@ -31,7 +31,7 @@ Smart Placement only considers candidate locations where the Worker has previous
 
 Smart Placement only affects the execution of [fetch event handlers](/workers/runtime-apis/handlers/fetch/). Workers without a fetch event handler will be ignored by Smart Placement. For Workers with both fetch and non-fetch event handlers, Smart Placement will only affect the execution of the fetch event handler.
 
-Similarly, Smart Placement will not affect the serving of [static assets](/workers/static-assets/). These will continue to be served from the nearest location to the incoming request. If a Worker script has been invoked and assets are being retrieved over a [binding](https://developers.cloudflare.com/workers/static-assets/binding/), then assets will be served from the same location as the executing Worker script.
+Similarly, Smart Placement will not affect where [static assets](/workers/static-assets/) are served from. Static assets will continue to be served from the location nearest to the incoming request. If a Worker is invoked and your code retrieves assets via the [static assets binding](https://developers.cloudflare.com/workers/static-assets/binding/), then assets will be served from the location that your Worker runs in.
 
 ## Enable Smart Placement
 
