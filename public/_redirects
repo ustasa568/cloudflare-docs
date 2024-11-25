@@ -297,7 +297,6 @@
 /d1/configuration/local-development/ /d1/build-with-d1/local-development/ 301
 /d1/configuration/remote-development/ /d1/build-with-d1/remote-development/ 301
 /d1/build-with-d1/import-data/ /d1/build-with-d1/import-export-data/ 301
-/d1/build-with-d1/d1-client-api/ /d1/build-with-d1/query-d1/ 301
 /d1/reference/database-commands/ /d1/reference/sql-statements/ 301
 /d1/reference/sql-statements/ /d1/sql-api/sql-statements/ 301
 
